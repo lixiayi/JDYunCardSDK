@@ -41,6 +41,13 @@
 
 + (NSString *)MD5:(NSString *)input stringEncoding:(NSStringEncoding)encode;
 
+/**
+ * 3DS加密和解密
+ */
+
++ (NSString *)encryptWithString:(NSString *)sText key:(NSString *)key;
++ (NSString *)decryptWithString:(NSString *)sText key:(NSString *)key;
+
 
 
 @end
