@@ -7,22 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02ACD4F01D928B630030002B /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 02ACD4ED1D928B630030002B /* GTMBase64.h */; };
-		02ACD4F11D928B630030002B /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 02ACD4EE1D928B630030002B /* GTMBase64.m */; };
-		02ACD4F21D928B630030002B /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 02ACD4EF1D928B630030002B /* GTMDefines.h */; };
-		02EAE3121D9260C00051232E /* JDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 02EAE3101D9260C00051232E /* JDUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02EAE3131D9260C00051232E /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EAE3111D9260C00051232E /* JDUtils.m */; };
+		0270945E1D935EBD00CB59A3 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094591D935EBC00CB59A3 /* GTMBase64.h */; };
+		0270945F1D935EBD00CB59A3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270945A1D935EBC00CB59A3 /* GTMBase64.m */; };
+		027094601D935EBD00CB59A3 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270945B1D935EBD00CB59A3 /* GTMDefines.h */; };
+		027094611D935EBD00CB59A3 /* JDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270945C1D935EBD00CB59A3 /* JDUtils.h */; };
+		027094621D935EBD00CB59A3 /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270945D1D935EBD00CB59A3 /* JDUtils.m */; };
+		027094651D935F1100CB59A3 /* JDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094631D935F1100CB59A3 /* JDLog.h */; };
+		027094661D935F1100CB59A3 /* JDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094641D935F1100CB59A3 /* JDLog.m */; };
+		027094691D935FD400CB59A3 /* URLCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094671D935FD400CB59A3 /* URLCode.h */; };
+		0270946A1D935FD400CB59A3 /* URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094681D935FD400CB59A3 /* URLCode.m */; };
+		0270946D1D93603000CB59A3 /* zipAndUnzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270946B1D93603000CB59A3 /* zipAndUnzip.h */; };
+		0270946E1D93603000CB59A3 /* zipAndUnzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270946C1D93603000CB59A3 /* zipAndUnzip.m */; };
 		02FAD9A31D925BBB00CA97FE /* JDYunCardSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A91D925CE400CA97FE /* JDCommonConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AC1D925CE400CA97FE /* JDCommonConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FAD9AA1D925CE400CA97FE /* JDCommonConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02ACD4ED1D928B630030002B /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		02ACD4EE1D928B630030002B /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		02ACD4EF1D928B630030002B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		02EAE3101D9260C00051232E /* JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUtils.h; sourceTree = "<group>"; };
-		02EAE3111D9260C00051232E /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
+		027094591D935EBC00CB59A3 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		0270945A1D935EBC00CB59A3 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		0270945B1D935EBD00CB59A3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		0270945C1D935EBD00CB59A3 /* JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUtils.h; sourceTree = "<group>"; };
+		0270945D1D935EBD00CB59A3 /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
+		027094631D935F1100CB59A3 /* JDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLog.h; sourceTree = "<group>"; };
+		027094641D935F1100CB59A3 /* JDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLog.m; sourceTree = "<group>"; };
+		027094671D935FD400CB59A3 /* URLCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCode.h; sourceTree = "<group>"; };
+		027094681D935FD400CB59A3 /* URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCode.m; sourceTree = "<group>"; };
+		0270946B1D93603000CB59A3 /* zipAndUnzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zipAndUnzip.h; sourceTree = "<group>"; };
+		0270946C1D93603000CB59A3 /* zipAndUnzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zipAndUnzip.m; sourceTree = "<group>"; };
 		02FAD99E1D925BBB00CA97FE /* JDYunCardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDYunCardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDYunCardSDK.h; sourceTree = "<group>"; };
 		02FAD9A21D925BBB00CA97FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		027094581D935EBC00CB59A3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0270946B1D93603000CB59A3 /* zipAndUnzip.h */,
+				0270946C1D93603000CB59A3 /* zipAndUnzip.m */,
+				027094671D935FD400CB59A3 /* URLCode.h */,
+				027094681D935FD400CB59A3 /* URLCode.m */,
+				027094591D935EBC00CB59A3 /* GTMBase64.h */,
+				0270945A1D935EBC00CB59A3 /* GTMBase64.m */,
+				0270945B1D935EBD00CB59A3 /* GTMDefines.h */,
+				0270945C1D935EBD00CB59A3 /* JDUtils.h */,
+				0270945D1D935EBD00CB59A3 /* JDUtils.m */,
+				027094631D935F1100CB59A3 /* JDLog.h */,
+				027094641D935F1100CB59A3 /* JDLog.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		02FAD9941D925BBB00CA97FE = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +90,11 @@
 		02FAD9A01D925BBB00CA97FE /* JDYunCardSDK */ = {
 			isa = PBXGroup;
 			children = (
+				027094581D935EBC00CB59A3 /* Utils */,
 				02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */,
 				02FAD9A21D925BBB00CA97FE /* Info.plist */,
 				02FAD9A91D925CE400CA97FE /* JDCommonConstant.h */,
 				02FAD9AA1D925CE400CA97FE /* JDCommonConstant.m */,
-				02EAE3101D9260C00051232E /* JDUtils.h */,
-				02EAE3111D9260C00051232E /* JDUtils.m */,
-				02ACD4ED1D928B630030002B /* GTMBase64.h */,
-				02ACD4EE1D928B630030002B /* GTMBase64.m */,
-				02ACD4EF1D928B630030002B /* GTMDefines.h */,
 			);
 			path = JDYunCardSDK;
 			sourceTree = "<group>";
@@ -80,11 +106,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027094601D935EBD00CB59A3 /* GTMDefines.h in Headers */,
 				02FAD9A31D925BBB00CA97FE /* JDYunCardSDK.h in Headers */,
+				0270945E1D935EBD00CB59A3 /* GTMBase64.h in Headers */,
+				027094651D935F1100CB59A3 /* JDLog.h in Headers */,
+				027094691D935FD400CB59A3 /* URLCode.h in Headers */,
 				02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */,
-				02ACD4F21D928B630030002B /* GTMDefines.h in Headers */,
-				02ACD4F01D928B630030002B /* GTMBase64.h in Headers */,
-				02EAE3121D9260C00051232E /* JDUtils.h in Headers */,
+				027094611D935EBD00CB59A3 /* JDUtils.h in Headers */,
+				0270946D1D93603000CB59A3 /* zipAndUnzip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				02FAD9AC1D925CE400CA97FE /* JDCommonConstant.m in Sources */,
-				02ACD4F11D928B630030002B /* GTMBase64.m in Sources */,
-				02EAE3131D9260C00051232E /* JDUtils.m in Sources */,
+				0270945F1D935EBD00CB59A3 /* GTMBase64.m in Sources */,
+				0270946A1D935FD400CB59A3 /* URLCode.m in Sources */,
+				027094661D935F1100CB59A3 /* JDLog.m in Sources */,
+				0270946E1D93603000CB59A3 /* zipAndUnzip.m in Sources */,
+				027094621D935EBD00CB59A3 /* JDUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
