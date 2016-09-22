@@ -34,6 +34,8 @@
 		027094961D936ED400CB59A3 /* JDAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094941D936ED400CB59A3 /* JDAPI.m */; };
 		027094991D936FC300CB59A3 /* APIConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094971D936FC300CB59A3 /* APIConstant.h */; };
 		0270949A1D936FC300CB59A3 /* APIConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094981D936FC300CB59A3 /* APIConstant.m */; };
+		0270949D1D937CFE00CB59A3 /* JDURLSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270949B1D937CFE00CB59A3 /* JDURLSession.h */; };
+		0270949E1D937CFE00CB59A3 /* JDURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270949C1D937CFE00CB59A3 /* JDURLSession.m */; };
 		02FAD9A31D925BBB00CA97FE /* JDYunCardSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A91D925CE400CA97FE /* JDCommonConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AC1D925CE400CA97FE /* JDCommonConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FAD9AA1D925CE400CA97FE /* JDCommonConstant.m */; };
@@ -67,6 +69,8 @@
 		027094941D936ED400CB59A3 /* JDAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAPI.m; sourceTree = "<group>"; };
 		027094971D936FC300CB59A3 /* APIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConstant.h; sourceTree = "<group>"; };
 		027094981D936FC300CB59A3 /* APIConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConstant.m; sourceTree = "<group>"; };
+		0270949B1D937CFE00CB59A3 /* JDURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDURLSession.h; sourceTree = "<group>"; };
+		0270949C1D937CFE00CB59A3 /* JDURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDURLSession.m; sourceTree = "<group>"; };
 		02FAD99E1D925BBB00CA97FE /* JDYunCardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDYunCardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDYunCardSDK.h; sourceTree = "<group>"; };
 		02FAD9A21D925BBB00CA97FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				027094941D936ED400CB59A3 /* JDAPI.m */,
 				027094971D936FC300CB59A3 /* APIConstant.h */,
 				027094981D936FC300CB59A3 /* APIConstant.m */,
+				0270949B1D937CFE00CB59A3 /* JDURLSession.h */,
+				0270949C1D937CFE00CB59A3 /* JDURLSession.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 				02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */,
 				0270947A1D9364C400CB59A3 /* AES.h in Headers */,
 				027094611D935EBD00CB59A3 /* JDUtils.h in Headers */,
+				0270949D1D937CFE00CB59A3 /* JDURLSession.h in Headers */,
 				027094901D9367FE00CB59A3 /* EncryptConstant.h in Headers */,
 				0270946D1D93603000CB59A3 /* zipAndUnzip.h in Headers */,
 				0270947C1D9364C400CB59A3 /* DES.h in Headers */,
@@ -266,6 +273,7 @@
 				027094661D935F1100CB59A3 /* JDLog.m in Sources */,
 				0270947D1D9364C400CB59A3 /* DES.m in Sources */,
 				027094911D9367FE00CB59A3 /* EncryptConstant.m in Sources */,
+				0270949E1D937CFE00CB59A3 /* JDURLSession.m in Sources */,
 				0270947B1D9364C400CB59A3 /* AES.m in Sources */,
 				0270946E1D93603000CB59A3 /* zipAndUnzip.m in Sources */,
 				027094811D9364C400CB59A3 /* RSA.m in Sources */,
