@@ -21,33 +21,5 @@
 + (NSString *)JDYunSDKVerson;
 
 
-#pragma mark - 加解密
-
-/**
- * 哈希-1加密
- */
-
-+ (NSString *)sha1:(NSString *)input;
-
-/**
- * 哈希-256加密
- */
-
-+ (NSString *)sha256:(NSString *)input;
-
-/**
- * MD5加密
- */
-
-+ (NSString *)MD5:(NSString *)input stringEncoding:(NSStringEncoding)encode;
-
-/**
- * 3DS加密和解密
- */
-
-+ (NSString *)encryptWithString:(NSString *)sText key:(NSString *)key;
-+ (NSString *)decryptWithString:(NSString *)sText key:(NSString *)key;
-
-
 
 @end

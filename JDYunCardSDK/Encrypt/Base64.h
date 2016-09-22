@@ -1,5 +1,5 @@
 //
-//  GTMBase64.h
+//  Base64.h
 //
 //  Copyright 2006-2008 Google Inc.
 //
@@ -15,15 +15,8 @@
 //  License for the specific language governing permissions and limitations under
 //  the License.
 //
-
-
-// WARNING: This class provides a subset of the functionality available in
-// GTMStringEncoding and may go away in the future.
-// Please consider using GTMStringEncoding instead.
-
-
 #import <Foundation/Foundation.h>
-#import "GTMDefines.h"
+#import "Base64Defines.h"
 
 // GTMBase64
 //
@@ -35,7 +28,7 @@
 /// encoding.  You must use the webSafe* methods together, the data does not
 /// interop with the RFC methods.
 //
-@interface GTMBase64 : NSObject
+@interface Base64 : NSObject
 
 //
 // Standard Base64 (RFC) handling
@@ -185,5 +178,30 @@
 ///   A new autoreleased NSData with the decoded payload.  nil for any error.
 //
 +(NSData *)webSafeDecodeString:(NSString *)string;
+
+
++(NSData *)baseEncode:(const void *)bytes
+               length:(NSUInteger)length
+              charset:(const char *)charset
+               padded:(BOOL)padded;
+
++(NSData *)baseDecode:(const void *)bytes
+               length:(NSUInteger)length
+              charset:(const char*)charset
+       requirePadding:(BOOL)requirePadding;
+
++(NSUInteger)baseEncode:(const char *)srcBytes
+                 srcLen:(NSUInteger)srcLen
+              destBytes:(char *)destBytes
+                destLen:(NSUInteger)destLen
+                charset:(const char *)charset
+                 padded:(BOOL)padded;
+
++(NSUInteger)baseDecode:(const char *)srcBytes
+                 srcLen:(NSUInteger)srcLen
+              destBytes:(char *)destBytes
+                destLen:(NSUInteger)destLen
+                charset:(const char *)charset
+         requirePadding:(BOOL)requirePadding;
 
 @end

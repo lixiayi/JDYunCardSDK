@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0270945E1D935EBD00CB59A3 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094591D935EBC00CB59A3 /* GTMBase64.h */; };
-		0270945F1D935EBD00CB59A3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270945A1D935EBC00CB59A3 /* GTMBase64.m */; };
-		027094601D935EBD00CB59A3 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270945B1D935EBD00CB59A3 /* GTMDefines.h */; };
 		027094611D935EBD00CB59A3 /* JDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270945C1D935EBD00CB59A3 /* JDUtils.h */; };
 		027094621D935EBD00CB59A3 /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270945D1D935EBD00CB59A3 /* JDUtils.m */; };
 		027094651D935F1100CB59A3 /* JDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094631D935F1100CB59A3 /* JDLog.h */; };
@@ -18,15 +15,27 @@
 		0270946A1D935FD400CB59A3 /* URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094681D935FD400CB59A3 /* URLCode.m */; };
 		0270946D1D93603000CB59A3 /* zipAndUnzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270946B1D93603000CB59A3 /* zipAndUnzip.h */; };
 		0270946E1D93603000CB59A3 /* zipAndUnzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270946C1D93603000CB59A3 /* zipAndUnzip.m */; };
+		0270947A1D9364C400CB59A3 /* AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094701D9364C400CB59A3 /* AES.h */; };
+		0270947B1D9364C400CB59A3 /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094711D9364C400CB59A3 /* AES.m */; };
+		0270947C1D9364C400CB59A3 /* DES.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094721D9364C400CB59A3 /* DES.h */; };
+		0270947D1D9364C400CB59A3 /* DES.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094731D9364C400CB59A3 /* DES.m */; };
+		0270947E1D9364C400CB59A3 /* MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094741D9364C400CB59A3 /* MD5.h */; };
+		0270947F1D9364C400CB59A3 /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094751D9364C400CB59A3 /* MD5.m */; };
+		027094801D9364C400CB59A3 /* RSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094761D9364C400CB59A3 /* RSA.h */; };
+		027094811D9364C400CB59A3 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094771D9364C400CB59A3 /* RSA.m */; };
+		027094821D9364C400CB59A3 /* SHA1.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094781D9364C400CB59A3 /* SHA1.h */; };
+		027094831D9364C400CB59A3 /* SHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094791D9364C400CB59A3 /* SHA1.m */; };
+		027094891D93651A00CB59A3 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094841D93651A00CB59A3 /* Base64.h */; };
+		0270948A1D93651A00CB59A3 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094851D93651A00CB59A3 /* Base64.m */; };
+		0270948B1D93651A00CB59A3 /* Base64Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094861D93651A00CB59A3 /* Base64Defines.h */; };
+		027094901D9367FE00CB59A3 /* EncryptConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270948E1D9367FE00CB59A3 /* EncryptConstant.h */; };
+		027094911D9367FE00CB59A3 /* EncryptConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270948F1D9367FE00CB59A3 /* EncryptConstant.m */; };
 		02FAD9A31D925BBB00CA97FE /* JDYunCardSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A91D925CE400CA97FE /* JDCommonConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AC1D925CE400CA97FE /* JDCommonConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FAD9AA1D925CE400CA97FE /* JDCommonConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		027094591D935EBC00CB59A3 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		0270945A1D935EBC00CB59A3 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		0270945B1D935EBD00CB59A3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		0270945C1D935EBD00CB59A3 /* JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUtils.h; sourceTree = "<group>"; };
 		0270945D1D935EBD00CB59A3 /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
 		027094631D935F1100CB59A3 /* JDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLog.h; sourceTree = "<group>"; };
@@ -35,6 +44,21 @@
 		027094681D935FD400CB59A3 /* URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCode.m; sourceTree = "<group>"; };
 		0270946B1D93603000CB59A3 /* zipAndUnzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zipAndUnzip.h; sourceTree = "<group>"; };
 		0270946C1D93603000CB59A3 /* zipAndUnzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zipAndUnzip.m; sourceTree = "<group>"; };
+		027094701D9364C400CB59A3 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
+		027094711D9364C400CB59A3 /* AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES.m; sourceTree = "<group>"; };
+		027094721D9364C400CB59A3 /* DES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES.h; sourceTree = "<group>"; };
+		027094731D9364C400CB59A3 /* DES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DES.m; sourceTree = "<group>"; };
+		027094741D9364C400CB59A3 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		027094751D9364C400CB59A3 /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
+		027094761D9364C400CB59A3 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		027094771D9364C400CB59A3 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		027094781D9364C400CB59A3 /* SHA1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA1.h; sourceTree = "<group>"; };
+		027094791D9364C400CB59A3 /* SHA1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHA1.m; sourceTree = "<group>"; };
+		027094841D93651A00CB59A3 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		027094851D93651A00CB59A3 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		027094861D93651A00CB59A3 /* Base64Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Defines.h; sourceTree = "<group>"; };
+		0270948E1D9367FE00CB59A3 /* EncryptConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptConstant.h; sourceTree = "<group>"; };
+		0270948F1D9367FE00CB59A3 /* EncryptConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptConstant.m; sourceTree = "<group>"; };
 		02FAD99E1D925BBB00CA97FE /* JDYunCardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDYunCardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDYunCardSDK.h; sourceTree = "<group>"; };
 		02FAD9A21D925BBB00CA97FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,15 +84,34 @@
 				0270946C1D93603000CB59A3 /* zipAndUnzip.m */,
 				027094671D935FD400CB59A3 /* URLCode.h */,
 				027094681D935FD400CB59A3 /* URLCode.m */,
-				027094591D935EBC00CB59A3 /* GTMBase64.h */,
-				0270945A1D935EBC00CB59A3 /* GTMBase64.m */,
-				0270945B1D935EBD00CB59A3 /* GTMDefines.h */,
 				0270945C1D935EBD00CB59A3 /* JDUtils.h */,
 				0270945D1D935EBD00CB59A3 /* JDUtils.m */,
 				027094631D935F1100CB59A3 /* JDLog.h */,
 				027094641D935F1100CB59A3 /* JDLog.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		0270946F1D9364C400CB59A3 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				027094861D93651A00CB59A3 /* Base64Defines.h */,
+				027094841D93651A00CB59A3 /* Base64.h */,
+				027094851D93651A00CB59A3 /* Base64.m */,
+				027094701D9364C400CB59A3 /* AES.h */,
+				027094711D9364C400CB59A3 /* AES.m */,
+				027094721D9364C400CB59A3 /* DES.h */,
+				027094731D9364C400CB59A3 /* DES.m */,
+				027094741D9364C400CB59A3 /* MD5.h */,
+				027094751D9364C400CB59A3 /* MD5.m */,
+				027094761D9364C400CB59A3 /* RSA.h */,
+				027094771D9364C400CB59A3 /* RSA.m */,
+				027094781D9364C400CB59A3 /* SHA1.h */,
+				027094791D9364C400CB59A3 /* SHA1.m */,
+				0270948E1D9367FE00CB59A3 /* EncryptConstant.h */,
+				0270948F1D9367FE00CB59A3 /* EncryptConstant.m */,
+			);
+			path = Encrypt;
 			sourceTree = "<group>";
 		};
 		02FAD9941D925BBB00CA97FE = {
@@ -90,6 +133,7 @@
 		02FAD9A01D925BBB00CA97FE /* JDYunCardSDK */ = {
 			isa = PBXGroup;
 			children = (
+				0270946F1D9364C400CB59A3 /* Encrypt */,
 				027094581D935EBC00CB59A3 /* Utils */,
 				02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */,
 				02FAD9A21D925BBB00CA97FE /* Info.plist */,
@@ -106,14 +150,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027094601D935EBD00CB59A3 /* GTMDefines.h in Headers */,
+				0270947E1D9364C400CB59A3 /* MD5.h in Headers */,
+				027094801D9364C400CB59A3 /* RSA.h in Headers */,
 				02FAD9A31D925BBB00CA97FE /* JDYunCardSDK.h in Headers */,
-				0270945E1D935EBD00CB59A3 /* GTMBase64.h in Headers */,
+				0270948B1D93651A00CB59A3 /* Base64Defines.h in Headers */,
+				027094891D93651A00CB59A3 /* Base64.h in Headers */,
 				027094651D935F1100CB59A3 /* JDLog.h in Headers */,
 				027094691D935FD400CB59A3 /* URLCode.h in Headers */,
 				02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */,
+				0270947A1D9364C400CB59A3 /* AES.h in Headers */,
 				027094611D935EBD00CB59A3 /* JDUtils.h in Headers */,
+				027094901D9367FE00CB59A3 /* EncryptConstant.h in Headers */,
 				0270946D1D93603000CB59A3 /* zipAndUnzip.h in Headers */,
+				0270947C1D9364C400CB59A3 /* DES.h in Headers */,
+				027094821D9364C400CB59A3 /* SHA1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,12 +236,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027094831D9364C400CB59A3 /* SHA1.m in Sources */,
 				02FAD9AC1D925CE400CA97FE /* JDCommonConstant.m in Sources */,
-				0270945F1D935EBD00CB59A3 /* GTMBase64.m in Sources */,
 				0270946A1D935FD400CB59A3 /* URLCode.m in Sources */,
 				027094661D935F1100CB59A3 /* JDLog.m in Sources */,
+				0270947D1D9364C400CB59A3 /* DES.m in Sources */,
+				027094911D9367FE00CB59A3 /* EncryptConstant.m in Sources */,
+				0270947B1D9364C400CB59A3 /* AES.m in Sources */,
 				0270946E1D93603000CB59A3 /* zipAndUnzip.m in Sources */,
+				027094811D9364C400CB59A3 /* RSA.m in Sources */,
+				0270947F1D9364C400CB59A3 /* MD5.m in Sources */,
 				027094621D935EBD00CB59A3 /* JDUtils.m in Sources */,
+				0270948A1D93651A00CB59A3 /* Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
