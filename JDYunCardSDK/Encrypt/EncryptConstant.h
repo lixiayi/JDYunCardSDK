@@ -17,7 +17,6 @@ UIKIT_EXTERN NSString *const CER_PUBLICKEY_DATA;
 /// 私钥
 UIKIT_EXTERN NSString *const CER_PRIVATEKEY_DATA;
 
-/// 服务器地址
-UIKIT_EXTERN NSString *const SERVER_URL;
+
 
 @end

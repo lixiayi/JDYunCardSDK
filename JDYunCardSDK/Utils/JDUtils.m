@@ -22,4 +22,16 @@
     return JD_YUN_CARD_SDK_VER;
 }
 
+/**
+ * 获取当前时间
+ * 格式:yyyy-MM-dd HH:mm:ss
+ */
+
++ (NSString *)getCurrentTime{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    NSString *ret_str = [formatter stringFromDate:[NSDate date]];
+    return ret_str;
+}
+
 @end

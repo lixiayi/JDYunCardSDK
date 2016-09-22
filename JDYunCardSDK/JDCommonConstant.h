@@ -18,5 +18,8 @@
 /// API的系统版本号
 UIKIT_EXTERN NSString *const JD_YUN_CARD_SDK_VER;
 
+/// 服务器地址
+UIKIT_EXTERN NSString *const SERVER_URL;
+
 
 @end

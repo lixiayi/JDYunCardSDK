@@ -20,6 +20,10 @@
 
 + (NSString *)JDYunSDKVerson;
 
-
+/**
+ * 获取当前时间
+ * 格式:yyyy-MM-dd HH:mm:ss
+ */
++ (NSString *)getCurrentTime;
 
 @end

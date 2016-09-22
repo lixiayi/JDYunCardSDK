@@ -30,6 +30,10 @@
 		0270948B1D93651A00CB59A3 /* Base64Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094861D93651A00CB59A3 /* Base64Defines.h */; };
 		027094901D9367FE00CB59A3 /* EncryptConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 0270948E1D9367FE00CB59A3 /* EncryptConstant.h */; };
 		027094911D9367FE00CB59A3 /* EncryptConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0270948F1D9367FE00CB59A3 /* EncryptConstant.m */; };
+		027094951D936ED400CB59A3 /* JDAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094931D936ED400CB59A3 /* JDAPI.h */; };
+		027094961D936ED400CB59A3 /* JDAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094941D936ED400CB59A3 /* JDAPI.m */; };
+		027094991D936FC300CB59A3 /* APIConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 027094971D936FC300CB59A3 /* APIConstant.h */; };
+		0270949A1D936FC300CB59A3 /* APIConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 027094981D936FC300CB59A3 /* APIConstant.m */; };
 		02FAD9A31D925BBB00CA97FE /* JDYunCardSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAD9A91D925CE400CA97FE /* JDCommonConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FAD9AC1D925CE400CA97FE /* JDCommonConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FAD9AA1D925CE400CA97FE /* JDCommonConstant.m */; };
@@ -59,6 +63,10 @@
 		027094861D93651A00CB59A3 /* Base64Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Defines.h; sourceTree = "<group>"; };
 		0270948E1D9367FE00CB59A3 /* EncryptConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptConstant.h; sourceTree = "<group>"; };
 		0270948F1D9367FE00CB59A3 /* EncryptConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptConstant.m; sourceTree = "<group>"; };
+		027094931D936ED400CB59A3 /* JDAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAPI.h; sourceTree = "<group>"; };
+		027094941D936ED400CB59A3 /* JDAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAPI.m; sourceTree = "<group>"; };
+		027094971D936FC300CB59A3 /* APIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConstant.h; sourceTree = "<group>"; };
+		027094981D936FC300CB59A3 /* APIConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConstant.m; sourceTree = "<group>"; };
 		02FAD99E1D925BBB00CA97FE /* JDYunCardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDYunCardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDYunCardSDK.h; sourceTree = "<group>"; };
 		02FAD9A21D925BBB00CA97FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +122,17 @@
 			path = Encrypt;
 			sourceTree = "<group>";
 		};
+		027094921D936ED400CB59A3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				027094931D936ED400CB59A3 /* JDAPI.h */,
+				027094941D936ED400CB59A3 /* JDAPI.m */,
+				027094971D936FC300CB59A3 /* APIConstant.h */,
+				027094981D936FC300CB59A3 /* APIConstant.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		02FAD9941D925BBB00CA97FE = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +152,7 @@
 		02FAD9A01D925BBB00CA97FE /* JDYunCardSDK */ = {
 			isa = PBXGroup;
 			children = (
+				027094921D936ED400CB59A3 /* Network */,
 				0270946F1D9364C400CB59A3 /* Encrypt */,
 				027094581D935EBC00CB59A3 /* Utils */,
 				02FAD9A11D925BBB00CA97FE /* JDYunCardSDK.h */,
@@ -150,12 +170,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027094951D936ED400CB59A3 /* JDAPI.h in Headers */,
 				0270947E1D9364C400CB59A3 /* MD5.h in Headers */,
 				027094801D9364C400CB59A3 /* RSA.h in Headers */,
 				02FAD9A31D925BBB00CA97FE /* JDYunCardSDK.h in Headers */,
 				0270948B1D93651A00CB59A3 /* Base64Defines.h in Headers */,
 				027094891D93651A00CB59A3 /* Base64.h in Headers */,
 				027094651D935F1100CB59A3 /* JDLog.h in Headers */,
+				027094991D936FC300CB59A3 /* APIConstant.h in Headers */,
 				027094691D935FD400CB59A3 /* URLCode.h in Headers */,
 				02FAD9AB1D925CE400CA97FE /* JDCommonConstant.h in Headers */,
 				0270947A1D9364C400CB59A3 /* AES.h in Headers */,
@@ -236,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027094961D936ED400CB59A3 /* JDAPI.m in Sources */,
 				027094831D9364C400CB59A3 /* SHA1.m in Sources */,
+				0270949A1D936FC300CB59A3 /* APIConstant.m in Sources */,
 				02FAD9AC1D925CE400CA97FE /* JDCommonConstant.m in Sources */,
 				0270946A1D935FD400CB59A3 /* URLCode.m in Sources */,
 				027094661D935F1100CB59A3 /* JDLog.m in Sources */,
