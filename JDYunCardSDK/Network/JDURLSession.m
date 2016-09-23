@@ -121,7 +121,7 @@ NS_ASSUME_NONNULL_END
                                            terminal,@"terminal",unique,@"unique",extendsInfo,@"extendsInfo", nil];
     
     NSMutableDictionary *signDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
-    NSString *postStr = [[JDAPI shareApi] getParamsWithAppParam:applicationDicityorny withSignParam:signDictionary];
+    NSString *postStr = [[JDAPI shareAPI] getParamsWithAppParam:applicationDicityorny withSignParam:signDictionary];
     [[JDURLSession Manager] postRequestToServer:self.interfaceAddress paramStr:postStr block:^(NSData *data, NSError *error) {
         if (data) {
             NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
@@ -141,7 +141,7 @@ NS_ASSUME_NONNULL_END
 - (void)initialization:(JDYunCardSDKInitializationBlock)initBlock {
     NSDictionary *applicationDicityorny = [NSDictionary dictionary];
     NSMutableDictionary *signDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
-    NSString *postStr = [[JDAPI shareApi] getParamsWithAppParam:applicationDicityorny withSignParam:signDictionary];
+    NSString *postStr = [[JDAPI shareAPI] getParamsWithAppParam:applicationDicityorny withSignParam:signDictionary];
     [[JDURLSession Manager] postRequestToServer:self.interfaceAddress paramStr:postStr block:^(NSData *data, NSError *error) {
         if (data) {
             NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];

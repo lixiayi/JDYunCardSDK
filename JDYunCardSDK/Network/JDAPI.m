@@ -12,6 +12,7 @@
 #import "MD5.h"
 #import "JDCommonConstant.h"
 #import "JDUtils.h"
+#import "RSA.h"
 
 
 static JDAPI *jd_api = nil;
@@ -19,7 +20,7 @@ static JDAPI *jd_api = nil;
 @implementation JDAPI
 
 #pragma mark - 单例
-+ (id)shareApi {
++ (id)shareAPI {
     dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         jd_api = [[self alloc] init];
@@ -70,21 +71,25 @@ static JDAPI *jd_api = nil;
 {
     NSString *resStr = nil;
     @try {
-
-        if (dic) {
-            NSArray *allValues = dic.allValues;
-            if (allValues.count > 1) {
-                resStr = [allValues componentsJoinedByString:@""];
-            } else if(allValues.count == 1){
-                resStr = [allValues objectAtIndex:0];
-            } else {
-                return err_msg2;
+        // 参数从a到z的顺序排序，若遇到相同首字母，则看第二个字母，以此类推
+        NSArray *keys = [dic allKeys];
+        NSArray *sortedArr = [keys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            return [obj1 compare:obj2 options:NSNumericSearch];
+        }];
+        
+        NSMutableString *str = [NSMutableString string];
+        for (NSString *categoryId in sortedArr) {
+            if ([sortedArr indexOfObject:categoryId] == [sortedArr count] - 1) {
+                [str appendFormat:@"%@=%@",categoryId,dic[categoryId]];
+            } else if (![JDUtils isEmptyStr:categoryId]) {
+                [str appendFormat:@"%@=%@,",categoryId,dic[categoryId]];
             }
-        } else {
-            return err_msg2;
         }
         
-        resStr = [MD5 MD5Digest:resStr];
+        // 使用MD5摘要算法对上一步生成的待签名字符串进行计算
+        NSString *md5_str = [MD5 MD5Digest:str];
+        // 使用PKCS1SHA1算法生成数字签名
+        resStr = [[RSA sharedRSA] sign:md5_str];
     }
     @catch (NSException *exception) {
         NSLog(@"%@", [exception description]);
