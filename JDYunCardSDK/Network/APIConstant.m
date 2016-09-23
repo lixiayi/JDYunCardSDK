@@ -19,4 +19,7 @@ NSString *const app_id      = @"WEI9X6B5Ca893gPPABkAAGFi";
 NSString *const terminal_no = @"43181800";
 NSString *const s_token     = @"";
 
+NSString *const cloud_card_user_register =  @"cloud_card_user_register";
+
+
 @end

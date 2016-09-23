@@ -28,37 +28,6 @@ static JDAPI *jd_api = nil;
     return jd_api;
 }
 
-#pragma mark - 生成最后的URL字符串
-
-/**
- 生成最后的url字符串
-
- @param dic     应用级的参数字典
- @param signDic 签名后的字典
-
- @return 最终的url
- */
-- (NSString *)getParamsWithAppParam:(NSDictionary *)dic
-                       withSignParam:(NSMutableDictionary *)signDic{
-    
-    if (!dic) { return err_msg1;}
-    
-    if (!signDic) {return err_msg2;}
-    
-    NSString *ret_str = @"";
-    // 获取应用级参数
-    NSMutableDictionary *obj = [NSMutableDictionary dictionaryWithDictionary:dic];
-    // 获取系统级参数
-    [obj addEntriesFromDictionary:[self getSystemParams:self.api_name withToken:NO]];
-    // 添加签名
-    obj[@"sign"] = [self getSign:signDic];
-    
-    NSString *body = [self stringPairsFromDictionary:obj];
-    ret_str = [NSString stringWithFormat:@"%@?%@", SERVER_URL, body];
-    
-    return ret_str;
-}
-
 #pragma mark- 生成数字签名(根据规则来定，如果是RSA则换成RSA签名)
 /**
  生成数字签名(根据规则来定，如果是RSA则换成RSA签名)
@@ -103,14 +72,16 @@ static JDAPI *jd_api = nil;
 }
 
 
-#pragma mark - 生成key=value
+#pragma mark - 把字典转换成键值对
+
 /**
- 生成key=value
+ 把字典转换成键值对
 
- @param dit 待生成的键值对
+ @param dit 待生成的键值对的字典
 
- @return 生成key=value链接后的字符串
+ @return 生成键值对后的字符串
  */
+
 - (NSString *)stringPairsFromDictionary:(NSDictionary *)dit {
     if (!dit) {
         return err_msg1;
@@ -144,6 +115,7 @@ static JDAPI *jd_api = nil;
 
  @return 返回系统参数的字典
  */
+
 - (NSDictionary *)getSystemParams:(NSString *)apiName withToken:(BOOL)token{
     NSMutableDictionary *mut_dic = [NSMutableDictionary dictionary];
     [mut_dic setValue:apiName forKey:@"api_name"];
@@ -152,7 +124,7 @@ static JDAPI *jd_api = nil;
     [mut_dic setValue:app_id forKey:@"app_id"];
     [mut_dic setValue:[JDUtils getCurrentTime] forKey:@"timestamp"];
     if (token) {
-        [mut_dic setValue:s_token forKey:@"token"];
+        [mut_dic setValue:s_token forKey:@"auth_token"];
     }
     return mut_dic;
 }

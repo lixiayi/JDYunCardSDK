@@ -15,12 +15,10 @@
 #import <Foundation/Foundation.h>
 #import "JDAPI.h"
 #import "JDCommonConstant.h"
+#import "APIConstant.h"
 
-// 云卡SDK初始化回调
-typedef void(^JDYunCardSDKInitializationBlock)(NSDictionary *initializationDictionary);
-
-// 云卡SDK绑定回调
-typedef void(^JDYunCardSDKBindBlock)(NSDictionary *bindDictionary);
+// 云卡用户注册
+typedef void(^JDYunCardSDKRegisterBlock)(NSDictionary *dic);
 
 // 云卡产品列表回调
 typedef void(^JDYunCardSDKProcutListBlock)(NSArray *products);
@@ -38,29 +36,16 @@ typedef void(^JDYunCardSDKProcutListBlock)(NSArray *products);
 + (JDURLSession *)Manager;
 
 
-#pragma mark - 云卡SDK绑定
+#pragma mark - 云卡用户注册
 
 /**
- 云卡SDK绑定
+ 云卡用户注册
 
- @param appid       云平台申请的应用ID
- @param terminal    云平台申请的终端号
- @param unique      云平台申请的终端号
- @param extendsInfo APP自定义信息
+ @param userParams    用户级别的参数
+ @param registerBlock 云卡用户注册后的回调
  */
 
-- (void)bind:(NSString *)appid terminal:(NSString *)terminal unique:(NSString *)unique extendsInfo:(NSString *)extendsInfo bindBlock:(JDYunCardSDKBindBlock)bindBlock;
-
-
-
-#pragma mark - 云卡SDK初始化
-/**
- 云卡SDK初始化
-
- @param initBlock 初始化的回调
- */
-- (void)initialization:(JDYunCardSDKInitializationBlock)initBlock;
-
+- (void)YunCardUserRegister:(NSDictionary *)userParams registerBlock:(JDYunCardSDKRegisterBlock)registerBlock;
 
 #pragma mark - 云卡产品列表
 /**

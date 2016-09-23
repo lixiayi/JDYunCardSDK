@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSURL *interfaceAddress;
 
+
 @end
 
 NS_ASSUME_NONNULL_END
@@ -105,60 +106,56 @@ NS_ASSUME_NONNULL_END
     [self.mainSession invalidateAndCancel];
 }
 
-#pragma mark - 云卡SDK绑定
+
+#pragma mark - 云卡用户注册
 
 /**
- 云卡SDK绑定
- 
- @param appid       云平台申请的应用ID
- @param terminal    云平台申请的终端号
- @param unique      云平台申请的终端号
- @param extendsInfo APP自定义信息
+ 云卡用户注册
+
+ @param userParams    应用参数
+ @param registerBlock 注册后的回调
  */
 
-- (void)bind:(NSString *)appid terminal:(NSString *)terminal unique:(NSString *)unique extendsInfo:(NSString *)extendsInfo bindBlock:(JDYunCardSDKBindBlock)bindBlock{
-    NSDictionary *applicationDicityorny = [NSDictionary dictionaryWithObjectsAndKeys:appid,@"appid",
-                                           terminal,@"terminal",unique,@"unique",extendsInfo,@"extendsInfo", nil];
+- (void)YunCardUserRegister:(NSDictionary *)userParams registerBlock:(JDYunCardSDKRegisterBlock)registerBlock {
+    NSURL *url = self.interfaceAddress;
+    NSString *allParamStr = [self allParamStr:userParams interface:cloud_card_user_register];
     
-    NSMutableDictionary *signDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
-    NSString *postStr = [[JDAPI shareAPI] getParamsWithAppParam:applicationDicityorny withSignParam:signDictionary];
-    [[JDURLSession Manager] postRequestToServer:self.interfaceAddress paramStr:postStr block:^(NSData *data, NSError *error) {
+    [self postRequestToServer:url paramStr:allParamStr block:^(NSData *data, NSError *error) {
         if (data) {
-            NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-            bindBlock(responseDictionary);
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+            registerBlock(dict);
         } else {
-            bindBlock(nil);
-        }
-    }];
-}
-
-#pragma mark - 云卡SDK初始化
-/**
- 云卡SDK初始化
- 
- @param initBlock 初始化的回调
- */
-- (void)initialization:(JDYunCardSDKInitializationBlock)initBlock {
-    NSDictionary *applicationDicityorny = [NSDictionary dictionary];
-    NSMutableDictionary *signDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
-    NSString *postStr = [[JDAPI shareAPI] getParamsWithAppParam:applicationDicityorny withSignParam:signDictionary];
-    [[JDURLSession Manager] postRequestToServer:self.interfaceAddress paramStr:postStr block:^(NSData *data, NSError *error) {
-        if (data) {
-            NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-            initBlock(responseDictionary);
-        } else {
-            initBlock(nil);
+            registerBlock(nil);
         }
     }];
 }
 
 #pragma mark - 云卡产品列表
+
 /**
  云卡产品列表
  
  @param listBlock 产品列表的回调
  */
+
 - (void)getCardList:(JDYunCardSDKProcutListBlock)listBlock {
     
 }
+
+
+#pragma mark - private 获取请求参数字符串
+- (NSString *)allParamStr:(NSDictionary *)userParams interface:(NSString *)interfaceName{
+    JDAPI *api = [JDAPI shareAPI];
+    api.api_name = interfaceName;
+
+    NSMutableDictionary *allParams = [NSMutableDictionary dictionaryWithDictionary:userParams];
+    NSDictionary *applicationDictionary = [api getSystemParams:api.api_name withToken:NO];
+    [allParams addEntriesFromDictionary:applicationDictionary];
+    NSString *signStr = [api getSign:allParams];
+    allParams[@"sign"] = signStr;
+    
+    NSString *allParamStr = [api stringPairsFromDictionary:allParams];
+    return allParamStr;
+}
+
 @end

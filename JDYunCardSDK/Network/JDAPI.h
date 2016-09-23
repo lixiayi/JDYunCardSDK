@@ -32,14 +32,36 @@
 + (id)shareAPI;
 
 /**
- *  获取请求的参数拼接成的URL字符串
- *  @param dic       应用级别参数
- *  @param signDic   参与签名的字典
- *
- *  @return 请求的url字符串
+ 获取系统级别参数
+
+ @param apiName api的名称
+ @param token   是否传token
+
+ @return 系统参数字典
  */
 
-- (NSString *)getParamsWithAppParam:(NSDictionary *)dic
-                       withSignParam:(NSMutableDictionary *)signDic;
+- (NSDictionary *)getSystemParams:(NSString *)apiName withToken:(BOOL)token;
+
+
+/**
+ 生成签名
+
+ @param dic 待签名的字典，包含了系统参数和应用参数
+
+ @return 签名后的字符串
+ */
+
+- (NSString *) getSign:(NSMutableDictionary *)dic;
+
+
+/**
+ 将最终的参数字典拆分成字符串
+
+ @param dit 参数字典
+
+ @return 请求的字符串参数 用 key=value,key=value... 形式出现
+ */
+
+- (NSString *)stringPairsFromDictionary:(NSDictionary *)dit;
 
 @end

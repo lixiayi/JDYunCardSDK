@@ -21,7 +21,10 @@ UIKIT_EXTERN NSString *const app_id;
 UIKIT_EXTERN NSString *const terminal_no;
 UIKIT_EXTERN NSString *const s_token;
 
+
 #pragma mark - 在此定义所有的接口常量
+
+UIKIT_EXTERN NSString *const cloud_card_user_register;
 
 
 @end
